@@ -1,4 +1,4 @@
-update=Saturday, October 01, 2016 'AMt' 10:19:21 AM
+update=Saturday, October 01, 2016 'PMt' 05:09:28 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,13 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=tm-kicad-lib
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

@@ -262,7 +262,7 @@ L LED D?
 U 1 1 57EF30E3
 P 3450 2850
 F 0 "D?" H 3450 2950 50  0000 C CNN
-F 1 "LED" H 3450 2750 50  0000 C CNN
+F 1 "Orange LED" H 3450 2750 50  0000 C CNN
 F 2 "" H 3450 2850 50  0000 C CNN
 F 3 "" H 3450 2850 50  0000 C CNN
 	1    3450 2850
@@ -273,7 +273,7 @@ L LED D?
 U 1 1 57EF326C
 P 3450 3150
 F 0 "D?" H 3450 3250 50  0000 C CNN
-F 1 "LED" H 3450 3050 50  0000 C CNN
+F 1 "Red LED" H 3450 3050 50  0000 C CNN
 F 2 "" H 3450 3150 50  0000 C CNN
 F 3 "" H 3450 3150 50  0000 C CNN
 	1    3450 3150
@@ -284,7 +284,7 @@ L R R?
 U 1 1 57EF3438
 P 3000 2850
 F 0 "R?" V 3080 2850 50  0000 C CNN
-F 1 "R" V 3000 2850 50  0000 C CNN
+F 1 "390R" V 3000 2850 50  0000 C CNN
 F 2 "" V 2930 2850 50  0000 C CNN
 F 3 "" H 3000 2850 50  0000 C CNN
 	1    3000 2850
@@ -295,7 +295,7 @@ L R R?
 U 1 1 57EF36DE
 P 3000 3150
 F 0 "R?" V 3080 3150 50  0000 C CNN
-F 1 "R" V 3000 3150 50  0000 C CNN
+F 1 "470R" V 3000 3150 50  0000 C CNN
 F 2 "" V 2930 3150 50  0000 C CNN
 F 3 "" H 3000 3150 50  0000 C CNN
 	1    3000 3150
@@ -318,8 +318,8 @@ U 1 1 57EF3AB4
 P 1200 3500
 F 0 "C?" H 1225 3600 50  0000 L CNN
 F 1 "100nF" H 1225 3400 50  0000 L CNN
-F 2 "" H 1238 3350 50  0000 C CNN
-F 3 "" H 1200 3500 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0402" H 1238 3350 50  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/LMK105BJ104KV-F/587-1227-1-ND/931004" H 1200 3500 50  0001 C CNN
 	1    1200 3500
 	1    0    0    -1  
 $EndComp
@@ -391,7 +391,7 @@ F 3 "" H 3300 5800 50  0000 C CNN
 $EndComp
 Text Label 3250 5200 0    60   ~ 0
 EXT_PWR
-Text Label 4050 6300 0    60   ~ 0
+Text Label 3850 6300 0    60   ~ 0
 3V3
 Text Label 3800 3800 0    60   ~ 0
 3V3
@@ -696,25 +696,25 @@ $EndComp
 $Comp
 L Cortex_M_Debug J?
 U 1 1 57F0685A
-P 9950 4900
-F 0 "J?" H 9650 5350 60  0000 C CNN
-F 1 "Cortex_M_Debug" H 9950 5250 60  0000 C CNN
-F 2 "" H 9750 4900 60  0001 C CNN
-F 3 "" H 9750 4900 60  0001 C CNN
-	1    9950 4900
+P 9950 5400
+F 0 "J?" H 9650 5850 60  0000 C CNN
+F 1 "Cortex_M_Debug" H 9950 5750 60  0000 C CNN
+F 2 "" H 9750 5400 60  0001 C CNN
+F 3 "" H 9750 5400 60  0001 C CNN
+	1    9950 5400
 	-1   0    0    1   
 $EndComp
-Text Label 10800 5100 2    60   ~ 0
+Text Label 10800 5600 2    60   ~ 0
 3V3
 $Comp
 L GND #PWR?
 U 1 1 57F07162
-P 11000 4900
-F 0 "#PWR?" H 11000 4650 50  0001 C CNN
-F 1 "GND" H 11000 4750 50  0000 C CNN
-F 2 "" H 11000 4900 50  0000 C CNN
-F 3 "" H 11000 4900 50  0000 C CNN
-	1    11000 4900
+P 11000 5400
+F 0 "#PWR?" H 11000 5150 50  0001 C CNN
+F 1 "GND" H 11000 5250 50  0000 C CNN
+F 2 "" H 11000 5400 50  0000 C CNN
+F 3 "" H 11000 5400 50  0000 C CNN
+	1    11000 5400
 	1    0    0    -1  
 $EndComp
 Text Label 5750 3200 0    60   ~ 0
@@ -746,7 +746,7 @@ Wire Wire Line
 Wire Wire Line
 	2600 6550 2500 6550
 Wire Wire Line
-	1500 7200 3850 7200
+	1500 7200 4350 7200
 Wire Wire Line
 	1900 7100 1900 7300
 Connection ~ 1900 7200
@@ -1102,64 +1102,64 @@ Wire Wire Line
 	5900 6800 6250 6800
 Connection ~ 6250 6800
 Wire Wire Line
-	10550 5100 10800 5100
+	10550 5600 10800 5600
 Wire Wire Line
-	10750 5000 10550 5000
+	10750 5500 10550 5500
 Wire Wire Line
-	10750 4700 10750 5000
+	10750 4750 10750 5500
 Wire Wire Line
-	10750 4900 10550 4900
+	10750 5400 10550 5400
 Wire Wire Line
-	10550 4800 11000 4800
-Connection ~ 10750 4900
+	10550 5300 11000 5300
+Connection ~ 10750 5400
 Wire Wire Line
-	10750 4700 10550 4700
-Connection ~ 10750 4800
-Connection ~ 10750 4700
+	10750 5200 10550 5200
+Connection ~ 10750 5300
+Connection ~ 10750 5200
 Wire Wire Line
-	11000 4800 11000 4900
+	11000 5300 11000 5400
 Wire Wire Line
 	8650 4200 9050 4200
 Wire Wire Line
-	9050 4200 9050 5100
+	9050 4200 9050 5600
 Wire Wire Line
-	9050 5100 9300 5100
+	9050 5600 9300 5600
 Wire Wire Line
 	8650 4300 9150 4300
 Wire Wire Line
-	9150 4300 9150 4800
+	9150 4300 9150 5300
 Wire Wire Line
-	9150 4800 9300 4800
+	9150 5300 9300 5300
 Wire Wire Line
 	8650 4400 8950 4400
 Wire Wire Line
-	8950 4400 8950 5000
+	8950 4400 8950 5500
 Wire Wire Line
-	8950 5000 9300 5000
+	8950 5500 9300 5500
 Wire Wire Line
-	9300 4900 8850 4900
+	8850 5400 9300 5400
 Wire Wire Line
-	8850 4900 8850 4500
+	8850 4500 8850 5400
 Wire Wire Line
 	8850 4500 8650 4500
 Wire Wire Line
 	5750 3200 6100 3200
 Wire Wire Line
-	9300 4450 9300 4700
+	9300 4700 9300 5200
 $Comp
 L R R?
 U 1 1 57F089E1
-P 9300 4300
-F 0 "R?" V 9380 4300 50  0000 C CNN
-F 1 "100K" V 9300 4300 50  0000 C CNN
-F 2 "" V 9230 4300 50  0000 C CNN
-F 3 "" H 9300 4300 50  0000 C CNN
-	1    9300 4300
+P 9300 4550
+F 0 "R?" V 9380 4550 50  0000 C CNN
+F 1 "100K" V 9300 4550 50  0000 C CNN
+F 2 "" V 9230 4550 50  0000 C CNN
+F 3 "" H 9300 4550 50  0000 C CNN
+	1    9300 4550
 	1    0    0    -1  
 $EndComp
-Text Label 9300 4550 0    60   ~ 0
+Text Label 9300 5050 0    60   ~ 0
 CHIP_PU
-Text Label 9300 4150 0    60   ~ 0
+Text Label 9300 4400 0    60   ~ 0
 3V3
 $Comp
 L C C?
@@ -1178,10 +1178,113 @@ Text Notes 2100 7650 0    60   ~ 0
 Same as in the original reach design. \nThis allows for an external lipo to be\nconnected and turns off power draw\nwhen the lipo is <3V
 Text Notes 4950 6050 0    60   ~ 0
 Config pins are by default pulled\nup or pulled down. The connector\nallows the pins to be swapped to\nthe opposite of the default state.
-Text Notes 4000 4900 0    60   ~ 0
-Can take 1.8V or 3.3V flash of up to\n8MB. Using a 3.3V QSPI flash, operates\nin SPI mode 0 or 3
+Text Notes 3900 5100 0    60   ~ 0
+Can take 1.8V or 3.3V flash of up to\n8MB. Using a 3.3V QSPI flash, operates\nin SPI mode 0 or 3. The boot config pins\nselect which SPI mode for the external \nflash
 Text Notes 1300 1700 0    60   ~ 0
 Initial programming is done through UART.\nThe UART pins are broken out to bypass \nthis FTDI chip entirely. Later on this can be\nreplaced with an Atmel chip for cost or just\nbe directly programmed by Tessel
-Text Notes 8950 2850 0    60   ~ 0
+Text Notes 10950 3200 0    60   ~ 0
 Almost any gpio can be muxed to spi/uart/i2c.\nHold off on connecting these till pcb layout
+$Comp
+L LED D?
+U 1 1 57F42F99
+P 4350 6500
+F 0 "D?" H 4350 6600 50  0000 C CNN
+F 1 "Blue LED" H 4350 6400 50  0000 C CNN
+F 2 "" H 4350 6500 50  0000 C CNN
+F 3 "http://www.digikey.com/product-detail/en/LB%20Q39G-L2N2-35-1/475-2816-1-ND/2176355" H 4350 6500 50  0001 C CNN
+	1    4350 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 57F43497
+P 4200 6300
+F 0 "R?" V 4280 6300 50  0000 C CNN
+F 1 "3kR" V 4200 6300 50  0000 C CNN
+F 2 "" V 4130 6300 50  0000 C CNN
+F 3 "" H 4200 6300 50  0000 C CNN
+	1    4200 6300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D?
+U 1 1 57F4437D
+P 9550 2500
+F 0 "D?" H 9550 2600 50  0000 C CNN
+F 1 "Green LED" H 9550 2400 50  0000 C CNN
+F 2 "" H 9550 2500 50  0000 C CNN
+F 3 "" H 9550 2500 50  0000 C CNN
+	1    9550 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 57F4466B
+P 9100 2500
+F 0 "R?" V 9180 2500 50  0000 C CNN
+F 1 "300R" V 9100 2500 50  0000 C CNN
+F 2 "" V 9030 2500 50  0000 C CNN
+F 3 "" H 9100 2500 50  0000 C CNN
+	1    9100 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 57F44C73
+P 9100 2750
+F 0 "R?" V 9180 2750 50  0000 C CNN
+F 1 "470R" V 9100 2750 50  0000 C CNN
+F 2 "" V 9030 2750 50  0000 C CNN
+F 3 "" H 9100 2750 50  0000 C CNN
+	1    9100 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D?
+U 1 1 57F44D24
+P 9550 2750
+F 0 "D?" H 9550 2850 50  0000 C CNN
+F 1 "Red LED" H 9550 2650 50  0000 C CNN
+F 2 "" H 9550 2750 50  0000 C CNN
+F 3 "" H 9550 2750 50  0000 C CNN
+	1    9550 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 57F44FD0
+P 9800 4750
+F 0 "SW?" H 9950 4860 50  0000 C CNN
+F 1 "SW_PUSH" H 9800 4670 50  0000 C CNN
+F 2 "" H 9800 4750 50  0000 C CNN
+F 3 "" H 9800 4750 50  0000 C CNN
+	1    9800 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 7200 4350 6700
+Connection ~ 3850 7200
+Wire Wire Line
+	8650 2600 8850 2600
+Wire Wire Line
+	8850 2600 8850 2500
+Wire Wire Line
+	8850 2500 8950 2500
+Wire Wire Line
+	8650 2700 8850 2700
+Wire Wire Line
+	8850 2700 8850 2750
+Wire Wire Line
+	8850 2750 8950 2750
+Wire Wire Line
+	9250 2500 9350 2500
+Wire Wire Line
+	9250 2750 9350 2750
+Wire Wire Line
+	9500 4750 9300 4750
+Connection ~ 9300 4750
+Wire Wire Line
+	10100 4750 10750 4750
+Text Notes 9600 4600 0    60   ~ 0
+Reset btn
 $EndSCHEMATC
