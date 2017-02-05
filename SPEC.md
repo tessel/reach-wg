@@ -1,8 +1,8 @@
 # Reach
 
-This document refines the requirements for Reach, a remote I/O board for connecting to sensors.
+This is the design document for Reach, a remote I/O board for connecting to sensors.
 
-The point of Tessel Reach is to enable low-power internet-connected devices to be programmed in high-level languages - an extension of Tessel into the low-power realm, and a sensible/accessible way to connect many distributed sensor nodes to form a sensor ecosystem.
+The goal of Tessel Reach is to enable low-power internet-connected devices to be programmed in high-level languages - an extension of Tessel into the low-power realm, and a sensible/accessible way to connect many distributed sensor nodes to form a sensor ecosystem.
 
 Tessel and Reach form star network whose origin is Tessel and points are Reach modules. The Tessel 2 is the entry point for the programmer:
 
