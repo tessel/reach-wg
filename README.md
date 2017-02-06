@@ -15,5 +15,6 @@ We're designing Tessel Reach!
 How to get involved:
 
 * **[Read the design document.](https://github.com/tessel/reach-wg/blob/master/SPEC.md)**
+* Join #reach-wg on [Tessel slack](//tessel.io/slack)
 * Ongoing software / hardware work to come.
 * Read the meeting minutes in `meetings/`
