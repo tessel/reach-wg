@@ -6,6 +6,59 @@ These notes are old but are being brought up to date.
 
 *TODO:* In what modes can Reach devices operate? What configurations are possible?
 
+# Software Interaction
+
+The interaction should match Tessel module programming as closely as possible. All software interactions should be made via Tessel– there will be no USB (or otherwise wired) programming of Reach.
+
+## Reach CLI
+
+The Reach CLI is going to be available via npm. The user will simply have to `npm install tessel-reach -g` (up for discussion), and they'll be able to access these options.
+
+Command          | option                          | description
+---------------- | ------------------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------
+reach list       |                                 | scans for discoverable devices and returns device ids. Makes it clear which devices it is and is not already connected to (if any).
+                 | -t                              | sets how long to scan for
+                 | -i                              | brings up "Connect to
+
+<dev-id> (y/n)" every time a device is found during discovery</dev-id>
+                 | -v                              | verbose. list all devices and information about all the devices (signal strenght)
+reach [dev-id] 1 |                                 | lists characteristics and information about the device (UUID, GATT characteristics, connectivity, signal strength, estimated battery life, etc)
+                 | -rssi, -s                       | returns signal strength in dB's
+                 | -b                              | estimation of battery life
+                 | -test                           | connect to dev-id, blink the LED, disconnect
+                 | -r
+
+<new-dev-id>
+</new-dev-id> | causes the GATT Generic Access Service to change it's Device Name (required characteristic)
+
+1 Note the GATT protocol has a required Service called the 'Generic Access Service' that contains a 'Device Name'. This is the characteristic that will be presented for `<dev-id>`.
+
+## Multi Master Pairing
+
+It is possible for multiple BLE "master" devices to be present and able to act upon Reach nodes, such as a computer with built-in BLE, a single Tessel V2, or many Tessel V2s, on a network with a BLE dongle. It is also possible that a user may attempt to use Reach in conjunction with a Tessel V1 + BLE Module. We must spec out a method for deciding which BLE master device is acting upon a Reach node:
+
+```
+if (!master) {
+  //error message. No way to connect to Reach nodes
+} else if (ENV.FLAGS.DEVICE_TO_USE) {
+  //use the device specified in the env var (warn user)
+} else {
+  if (v2.count > 0) {
+    if (v2.count > 1) {
+      //info message. Present options of tessels to use
+    } else {
+      //use the one tessel thats connected
+    }
+  } else {
+    if (device.external_device_found) {
+      //use third party ble device (ble dongle, ble module, etc)
+    } else {
+      //use built in ble functionality (macbook, phone, etc)
+    }
+  }
+}
+```
+
 ## An Example Reach API
 
 var Reach = new Reach([dev-id]) | New reach object
