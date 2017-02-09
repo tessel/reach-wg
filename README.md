@@ -5,9 +5,9 @@
 We're designing Tessel Reach!
 
 > Reach is a remote I/O board for connecting to sensors.
-> 
+>
 > The point of Tessel Reach is to enable low-power internet-connected devices to be programmed in high-level languages - an extension of Tessel into the low-power realm, and a sensible/accessible way to connect many distributed sensor nodes to form a sensor ecosystem.
-> 
+>
 > Tessel and Reach form star network whose origin is Tessel and points are Reach modules. The Tessel 2 is the entry point for the programmer.
 >
 > Reach modules are low-power sensor nodes placed around a room or environment.
@@ -27,7 +27,9 @@ Reach is a work in progress. We have three tasks to address:
 
 How do you interface with a network of sensors? How do you perform autodiscovery? And when talking to a sensor, what is the API like to control its I/O interfaces? We're investigating these questions by designing an API proposal that we can eaasily prototype and test in a few common scenarios.
 
-To help develop our interfaction usecase, please look at our `case-studies/` folder and contribute to it!
+**[Read more about our design for interacting with reach.](https://github.com/tessel/reach-wg/blob/master/README.md)**
+
+To help develop our interfaction usecase, please look at our `case-studies/` folder and contribute to it.
 
 ### Firmware
 
