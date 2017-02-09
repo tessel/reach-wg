@@ -27,7 +27,7 @@ Reach is a work in progress. We have three tasks to address:
 
 How do you interface with a network of sensors? How do you perform autodiscovery? And when talking to a sensor, what is the API like to control its I/O interfaces? We're investigating these questions by designing an API proposal that we can eaasily prototype and test in a few common scenarios.
 
-**[Read more about our design for interacting with reach.](https://github.com/tessel/reach-wg/blob/master/README.md)**
+**[Read more about our design for interacting with reach.](https://github.com/tessel/reach-wg/blob/master/INTERACTION.md)**
 
 To help develop our interfaction usecase, please look at our `case-studies/` folder and contribute to it.
 
