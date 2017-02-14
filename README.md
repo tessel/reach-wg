@@ -29,6 +29,8 @@ How do you interface with a network of sensors? How do you perform autodiscovery
 
 **[Read more about our design for interacting with reach.](https://github.com/tessel/reach-wg/blob/master/INTERACTION.md)** 
 
+**Next steps:**
+
 * [ ] Collect user studies in the folder `case-studies/`. (Submit a PR and contribute your project!)
 * [ ] Design an API that allows for star network topology over BLE or Wifi.
 * [ ] Describe how module code would interact with Reach over this network.
@@ -46,6 +48,8 @@ We are currently prototyping on the ESP32 board:
 
 See `firmware-esp32/` for WIP instructions on how to compile and run our firmware on an ESP32 dev board.
 
+**Next steps:**
+
 * [ ] Add a "hello world" to `firmware-esp32/` that can be built out of this repo.
 * [ ] Make our firmware able to talk I2C and SPI and be testable (e.g. with a module and a logic analyzer).
 * [ ] Identify which RTOS (or none) would be applicable for the ESP32 board.
@@ -58,10 +62,12 @@ See `firmware-esp32/` for WIP instructions on how to compile and run our firmwar
 
 Our goal is to design an ESP32 board that allows us to rapidly test out our product requirements, get out prototype hardware to contributors, and test out real world workloads like speed, power consumption, and radio range. See `hardware-esp32/` for a work in progress schematic and BOM.
 
+**Next steps:**
+
 * [ ] Layout V1 board and manufactured through board house.
 * [ ] Assemble board in-house and determine issues.
 * [ ] Layout V2 with revisions for general distribution to contributors.
-* [ ] (More board revisions as needed.)
+* [ ] More board revisions as needed...
 * [ ] Create a final "form factor" design with input from production house.
 * [ ] Identify milestones for hardware, including "shipping" milestones and "advanced" milestones to follow.
 
