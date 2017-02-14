@@ -64,6 +64,7 @@ Our goal is to design an ESP32 board that allows us to rapidly test out our prod
 
 **Next steps:**
 
+* [ ] Identify power consumption for ESP32 BLE & Wifi, in addition to other architectures and radios.
 * [ ] Layout V1 board and manufactured through board house.
 * [ ] Assemble board in-house and determine issues.
 * [ ] Layout V2 with revisions for general distribution to contributors.
