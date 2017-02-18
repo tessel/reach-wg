@@ -25,9 +25,9 @@ Reach is a work in progress. To ship Reach, there are three projects to work on:
 
 ### Interaction
 
-How do you interface with a network of sensors? How do you perform autodiscovery? And when talking to a sensor, what is the API like to control its I/O interfaces? We're investigating these questions by designing an API proposal that we can eaasily prototype and test in a few common scenarios.
+**[Read our design for interacting with reach.](https://github.com/tessel/reach-wg/blob/master/INTERACTION.md)** 
 
-**[Read more about our design for interacting with reach.](https://github.com/tessel/reach-wg/blob/master/INTERACTION.md)** 
+How do you interface with a network of sensors? How do you perform autodiscovery? And when talking to a sensor, what is the API like to control its I/O interfaces? We're investigating these questions by designing an API proposal that we can eaasily prototype and test in a few common scenarios.
 
 *Next steps:*
 
@@ -39,14 +39,14 @@ How do you interface with a network of sensors? How do you perform autodiscovery
 
 ### Firmware
 
+[**Read the getting started instructions.**](https://github.com/tessel/reach-wg/blob/master/firmware-esp32/README.md) See the `firmware-esp32/` folder for source code and instructions on how to run Reach's firmware.
+
 We want to build a realtime firmware that can handle asynchronous radio communication, enter and wake from low power sleep modes, can handle a novel protocol design communicating with T2, and which exposes the full range of I/O.
 
-We are currently prototyping on the ESP32 board:
+We are currently prototyping with the ESP32 architecture:
 
 * We recommend using the [Sparkfun ESP32 Thing](https://www.sparkfun.com/products/13907) with a corresponding [tutorial](https://learn.sparkfun.com/tutorials/esp32-thing-hookup-guide). (You can also choose another dev kit like the [DevKitC from Adafruit](https://www.adafruit.com/products/3269), with some adjustments to your setup.)
 * We use the [esp-idf](https://github.com/espressif/esp-idf) development environment (make sure to use v2.0 or a v2.0 release candidate.)
-
-[**Read the getting started instructions.**](https://github.com/tessel/reach-wg/blob/master/firmware-esp32/README.md) See the `firmware-esp32/` folder for source code and instructions on how to run Reach's firmware.
 
 *Next steps:*
 
