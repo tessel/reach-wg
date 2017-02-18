@@ -50,9 +50,9 @@ See `firmware-esp32/` for WIP instructions on how to compile and run our firmwar
 
 **Next steps:**
 
-* [ ] [Add a "hello world" to `firmware-esp32/` that can be built out of this repo.](https://github.com/tessel/reach-wg/issues/14)
-* [ ] Write a guide for getting started with an ESP32 Thing.
-* [ ] Make our firmware able to talk I2C and SPI and be testable (e.g. with a module and a logic analyzer).
+* [x] <s>[Add a "hello world" to `firmware-esp32/` that can be built out of this repo.](https://github.com/tessel/reach-wg/issues/14)</s>
+* [ ] [Write a guide for getting started with an ESP32 Thing.](https://github.com/tessel/reach-wg/issues/17)
+* [ ] [Make our firmware able to talk I2C and be testable (e.g. with a module and a logic analyzer).](https://github.com/tessel/reach-wg/issues/18)
 * [ ] Identify which RTOS (or none) would be applicable for the ESP32 board.
 * [ ] Make our firmware able to talk Wifi and be testable.
 * [ ] Make our firmware able to talk BLE and be testable.
