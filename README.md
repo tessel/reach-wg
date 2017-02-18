@@ -46,7 +46,7 @@ We are currently prototyping on the ESP32 board:
 * We recommend using the [Sparkfun ESP32 Thing](https://www.sparkfun.com/products/13907) with a corresponding [tutorial](https://learn.sparkfun.com/tutorials/esp32-thing-hookup-guide). (You can also choose another dev kit like the [DevKitC from Adafruit](https://www.adafruit.com/products/3269), with some adjustments to your setup.)
 * We use the [esp-idf](https://github.com/espressif/esp-idf) development environment (make sure to use v2.0 or a v2.0 release candidate.)
 
-See `firmware-esp32/` for WIP instructions on how to compile and run our firmware on an ESP32 dev board.
+[**Read the getting started instructions.**](https://github.com/tessel/reach-wg/blob/master/firmware-esp32/README.md) See the `firmware-esp32/` folder for source code and instructions on how to run Reach's firmware.
 
 **Next steps:**
 
