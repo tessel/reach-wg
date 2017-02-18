@@ -9,7 +9,7 @@ Follow the link below for your operating system and make sure you are able to su
 - [MacOS X install instructions](http://esp-idf.readthedocs.io/en/latest/macos-setup.html)
 
 After installing the tool chain and downloading the `esp-idf` repository:
-  - **On Windows:** Create the file `C:/msys32/etc/profile.d/` and add the line `export IDF_PATH="C:/path/to/esp-idf"`
+  - **On Windows:** Create a new `.sh` file inside `C:/msys32/etc/profile.d/` and add the line `export IDF_PATH=/c/path/to/esp-idf`. Note that the Make configuration expects a UNIX style path and will not build if the path contains any colons or quotes.
   - **On Linux or MacOS:** Add the line `export IDF_PATH=~/esp/esp-idf` to your `~/.profile`, `~/.bashrc`, or equivalent terminal cofiguration dotfile.
 
 This is just so you don't have to set the `IDF_PATH` every time you start a new terminal session.
