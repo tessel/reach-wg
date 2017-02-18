@@ -29,7 +29,7 @@ How do you interface with a network of sensors? How do you perform autodiscovery
 
 **[Read more about our design for interacting with reach.](https://github.com/tessel/reach-wg/blob/master/INTERACTION.md)** 
 
-**Next steps:**
+*Next steps:*
 
 * [ ] [Collect user studies in the folder `case-studies/`. (Submit a PR and contribute your project!)](https://github.com/tessel/reach-wg/issues/11)
 * [ ] [Design an API that allows for star network topology over BLE or Wifi.](https://github.com/tessel/reach-wg/issues/13)
@@ -48,10 +48,10 @@ We are currently prototyping on the ESP32 board:
 
 [**Read the getting started instructions.**](https://github.com/tessel/reach-wg/blob/master/firmware-esp32/README.md) See the `firmware-esp32/` folder for source code and instructions on how to run Reach's firmware.
 
-**Next steps:**
+*Next steps:*
 
 * [x] <s>[Add a "hello world" to `firmware-esp32/` that can be built out of this repo.](https://github.com/tessel/reach-wg/issues/14)</s>
-* [ ] [Write a guide for getting started with an ESP32 Thing.](https://github.com/tessel/reach-wg/issues/17)
+* [x] <s>[Write a guide for getting started with an ESP32 Thing.](https://github.com/tessel/reach-wg/issues/17)</s>
 * [ ] [Make our firmware able to talk I2C and be testable (e.g. with a module and a logic analyzer).](https://github.com/tessel/reach-wg/issues/18)
 * [ ] Identify which RTOS (or none) would be applicable for the ESP32 board.
 * [ ] Make our firmware able to talk Wifi and be testable.
@@ -63,7 +63,7 @@ We are currently prototyping on the ESP32 board:
 
 Our goal is to design an ESP32 board that allows us to rapidly test out our product requirements, get out prototype hardware to contributors, and test out real world workloads like speed, power consumption, and radio range. See `hardware-esp32/` for a work in progress schematic and BOM.
 
-**Next steps:**
+*Next steps:*
 
 * [ ] [Identify power consumption for ESP32 BLE & Wifi, in addition to other architectures and radios.](https://github.com/tessel/reach-wg/issues/15)
 * [ ] [Complete V1 schematic, layout, and design review](https://github.com/tessel/reach-wg/issues/16)
