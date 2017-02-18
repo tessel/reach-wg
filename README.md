@@ -14,7 +14,7 @@ We're designing Tessel Reach!
 
 How to get involved:
 
-* **[Read the design document.](https://github.com/tessel/reach-wg/blob/master/SPEC.md)**
+* **[Read the design document.](https://github.com/tessel/reach-wg/issues/12)**
 * Join #reach-wg on [Tessel slack](//tessel.io/slack)
 * Ongoing software / hardware work to come.
 * Read the meeting minutes in `meetings/`
@@ -31,8 +31,8 @@ How do you interface with a network of sensors? How do you perform autodiscovery
 
 **Next steps:**
 
-* [ ] Collect user studies in the folder `case-studies/`. (Submit a PR and contribute your project!)
-* [ ] Design an API that allows for star network topology over BLE or Wifi.
+* [ ] [Collect user studies in the folder `case-studies/`. (Submit a PR and contribute your project!)](https://github.com/tessel/reach-wg/issues/11)
+* [ ] [Design an API that allows for star network topology over BLE or Wifi.](https://github.com/tessel/reach-wg/issues/13)
 * [ ] Describe how module code would interact with Reach over this network.
 * [ ] Prototype these interactions on a high level, e.g. using two or more Tessels to begin with.
 * [ ] Identify milestones for implementation, including "shipping" milestones and "advanced" milestones to follow.
@@ -43,14 +43,15 @@ We want to build a realtime firmware that can handle asynchronous radio communic
 
 We are currently prototyping on the ESP32 board:
 
-* We recommend using the [Sparkfun ESP32 Thing](https://www.sparkfun.com/products/13907) with a corresponding [tutorial](https://learn.sparkfun.com/tutorials/esp32-thing-hookup-guide). You can also choose another dev kit like the [DevKitC from Adafruit](https://www.adafruit.com/products/3269).
+* We recommend using the [Sparkfun ESP32 Thing](https://www.sparkfun.com/products/13907) with a corresponding [tutorial](https://learn.sparkfun.com/tutorials/esp32-thing-hookup-guide). (You can also choose another dev kit like the [DevKitC from Adafruit](https://www.adafruit.com/products/3269), with some adjustments to your setup.)
 * We use the [esp-idf](https://github.com/espressif/esp-idf) development environment (make sure to use v2.0 or a v2.0 release candidate.)
 
 See `firmware-esp32/` for WIP instructions on how to compile and run our firmware on an ESP32 dev board.
 
 **Next steps:**
 
-* [ ] Add a "hello world" to `firmware-esp32/` that can be built out of this repo.
+* [ ] [Add a "hello world" to `firmware-esp32/` that can be built out of this repo.](https://github.com/tessel/reach-wg/issues/14)
+* [ ] Write a guide for getting started with an ESP32 Thing.
 * [ ] Make our firmware able to talk I2C and SPI and be testable (e.g. with a module and a logic analyzer).
 * [ ] Identify which RTOS (or none) would be applicable for the ESP32 board.
 * [ ] Make our firmware able to talk Wifi and be testable.
@@ -64,9 +65,9 @@ Our goal is to design an ESP32 board that allows us to rapidly test out our prod
 
 **Next steps:**
 
-* [ ] Identify power consumption for ESP32 BLE & Wifi, in addition to other architectures and radios.
-* [ ] Layout V1 board and manufactured through board house.
-* [ ] Assemble board in-house and determine issues.
+* [ ] [Identify power consumption for ESP32 BLE & Wifi, in addition to other architectures and radios.](https://github.com/tessel/reach-wg/issues/15)
+* [ ] [Complete V1 schematic, layout, and design review](https://github.com/tessel/reach-wg/issues/16)
+* [ ] Have V1 manufactured & assembled in-house, then determine issues.
 * [ ] Layout V2 with revisions for general distribution to contributors.
 * [ ] More board revisions as needed...
 * [ ] Create a final "form factor" design with input from production house.
