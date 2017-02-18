@@ -14,7 +14,7 @@ We're designing Tessel Reach!
 
 How to get involved:
 
-* **[Read the design document.](https://github.com/tessel/reach-wg/issues/12)**
+* **[Read the product design document.](https://github.com/tessel/reach-wg/issues/12)**
 * Join #reach-wg on [Tessel slack](//tessel.io/slack)
 * Ongoing software / hardware work to come.
 * Read the meeting minutes in `meetings/`
@@ -39,11 +39,11 @@ How do you interface with a network of sensors? How do you perform autodiscovery
 
 ### Firmware
 
-[**Read the getting started instructions.**](https://github.com/tessel/reach-wg/blob/master/firmware-esp32/README.md) See the `firmware-esp32/` folder for source code and instructions on how to run Reach's firmware.
+**[Read the getting started instructions.](https://github.com/tessel/reach-wg/blob/master/firmware-esp32/README.md)**
 
-We want to build a realtime firmware that can handle asynchronous radio communication, enter and wake from low power sleep modes, can handle a novel protocol design communicating with T2, and which exposes the full range of I/O.
+See the `firmware-esp32/` folder for source code and instructions on how to run Reach's firmware.
 
-We are currently prototyping with the ESP32 architecture:
+We want to build a realtime firmware that can handle asynchronous radio communication, enter and wake from low power sleep modes, can handle a novel protocol design communicating with T2, and which exposes the full range of I/O. We are currently prototyping with the ESP32 architecture:
 
 * We recommend using the [Sparkfun ESP32 Thing](https://www.sparkfun.com/products/13907) with a corresponding [tutorial](https://learn.sparkfun.com/tutorials/esp32-thing-hookup-guide). (You can also choose another dev kit like the [DevKitC from Adafruit](https://www.adafruit.com/products/3269), with some adjustments to your setup.)
 * We use the [esp-idf](https://github.com/espressif/esp-idf) development environment (make sure to use v2.0 or a v2.0 release candidate.)
@@ -53,7 +53,7 @@ We are currently prototyping with the ESP32 architecture:
 * [x] <s>[Add a "hello world" to `firmware-esp32/` that can be built out of this repo.](https://github.com/tessel/reach-wg/issues/14)</s>
 * [x] <s>[Write a guide for getting started with an ESP32 Thing.](https://github.com/tessel/reach-wg/issues/17)</s>
 * [ ] [Make our firmware able to talk I2C and be testable (e.g. with a module and a logic analyzer).](https://github.com/tessel/reach-wg/issues/18)
-* [ ] Identify which RTOS (or none) would be applicable for the ESP32 board.
+* [ ] [Identify which RTOS (or otherwise) is required for the ESP32.](https://github.com/tessel/reach-wg/issues/20)
 * [ ] Make our firmware able to talk Wifi and be testable.
 * [ ] Make our firmware able to talk BLE and be testable.
 * [ ] Implement an end-to-end demo that demonstrates our Interaction design.
