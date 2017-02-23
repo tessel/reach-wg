@@ -23,47 +23,39 @@ How to get involved:
 
 Reach is a work in progress. To ship Reach, there are three projects to work on:
 
-### Interaction
+### Interaction (INTERACTION.md)
 
-**[How will you interact with Reach? (WIP)](https://github.com/tessel/reach-wg/blob/master/INTERACTION.md)** 
+**[Current Draft: How do you interact with Reach?](https://github.com/tessel/reach-wg/blob/master/INTERACTION.md)** 
 
 How do you interface with a network of sensors? How do you perform autodiscovery? And when talking to a sensor, what is the API like to control its I/O interfaces? We're investigating these questions by designing an API proposal that we can eaasily prototype and test in a few common scenarios.
 
-*Next steps:*
-
-* [ ] [Collect user studies in the folder `case-studies/`. (Submit a PR and contribute your project!)](https://github.com/tessel/reach-wg/issues/11)
-* [ ] [Design an API that allows for star network topology over BLE or Wifi.](https://github.com/tessel/reach-wg/issues/13)
+* [ ] **Next: [Collect user studies in the folder `case-studies/`. (Submit a PR and contribute your project!)](https://github.com/tessel/reach-wg/issues/11)**
+* [ ] **Next: [Design an API that allows for star network topology over BLE or Wifi.](https://github.com/tessel/reach-wg/issues/13)**
 * [ ] Describe how module code would interact with Reach over this network.
 * [ ] Prototype these interactions on a high level, e.g. using two or more Tessels to begin with.
 * [ ] Identify milestones for implementation, including "shipping" milestones and "advanced" milestones to follow.
 
-### Firmware
+### Firmware (firmware-esp32/)
 
 **[Read this to get started with Reach's firmware.](https://github.com/tessel/reach-wg/blob/master/firmware-esp32/README.md)**
 
-See the `firmware-esp32/` folder for source code and instructions on how to run Reach's firmware.
-
 We want to build a realtime firmware that can handle asynchronous radio communication, enter and wake from low power sleep modes, can handle a novel protocol design communicating with T2, and which exposes the full range of I/O. We are currently prototyping with the ESP32 architecture: we recommend using the [Sparkfun ESP32 Thing](https://www.sparkfun.com/products/13907) with a corresponding [tutorial](https://learn.sparkfun.com/tutorials/esp32-thing-hookup-guide). (You can also choose another dev kit like the [DevKitC from Adafruit](https://www.adafruit.com/products/3269), with some adjustments to your setup.)
-
-*Next steps:*
 
 * [x] <s>[Add a "hello world" to `firmware-esp32/` that can be built out of this repo.](https://github.com/tessel/reach-wg/issues/14)</s>
 * [x] <s>[Write a guide for getting started with an ESP32 Thing.](https://github.com/tessel/reach-wg/issues/17)</s>
-* [ ] [Make our firmware able to talk I2C to a Tessel module.](https://github.com/tessel/reach-wg/issues/18)
-* [ ] [Identify which RTOS (or otherwise) is required for the ESP32.](https://github.com/tessel/reach-wg/issues/20)
+* [ ] **Next: [Make our firmware able to talk I2C to a Tessel module.](https://github.com/tessel/reach-wg/issues/18)**
+* [ ] **Next: [Identify which RTOS (or otherwise) is required for the ESP32.](https://github.com/tessel/reach-wg/issues/20)**
 * [ ] Make our firmware able to talk Wifi and be testable.
 * [ ] Make our firmware able to talk BLE and be testable.
 * [ ] Implement an end-to-end demo that demonstrates our Interaction design.
 * [ ] Identify milestones for firmware, including "shipping" milestones and "advanced" milestones to follow.
 
-### Hardware
+### Hardware (hardware-esp32/)
 
 Our goal is to design an ESP32 board that allows us to rapidly test out our product requirements, get out prototype hardware to contributors, and test out real world workloads like speed, power consumption, and radio range. See `hardware-esp32/` for a work in progress schematic and BOM.
 
-*Next steps:*
-
-* [ ] [Identify power consumption for ESP32 BLE & Wifi, in addition to other architectures and radios.](https://github.com/tessel/reach-wg/issues/15)
-* [ ] [Complete V1 schematic, layout, and design review](https://github.com/tessel/reach-wg/issues/16)
+* [ ] **Next: [Identify power consumption for ESP32 BLE & Wifi, in addition to other architectures and radios.](https://github.com/tessel/reach-wg/issues/15)**
+* [ ] **Next: [Complete V1 schematic, layout, and design review](https://github.com/tessel/reach-wg/issues/16)**
 * [ ] Have V1 manufactured & assembled in-house, then determine issues.
 * [ ] Layout V2 with revisions for general distribution to contributors.
 * [ ] More board revisions as needed...
