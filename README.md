@@ -17,7 +17,7 @@ How to get involved:
 * Ongoing software / hardware work to come.
 * Read the meeting minutes in `meetings/`
 
-## Development Process
+## What we're working on (and how you can help!)
 
 Reach is a work in progress. To ship Reach, there are three projects to work on:
 
