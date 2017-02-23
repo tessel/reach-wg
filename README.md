@@ -2,9 +2,7 @@
 
 [![Code of Conduct](https://img.shields.io/badge/%E2%9D%A4-code%20of%20conduct-blue.svg?style=flat)](https://github.com/tessel/project/blob/master/CONDUCT.md)
 
-We're designing Tessel Reach!
-
-> Reach is a remote I/O board for connecting to sensors.
+We're designing Tessel Reach: a remote I/O board for connecting to sensors.
 >
 > The point of Tessel Reach is to enable low-power internet-connected devices to be programmed in high-level languages - an extension of Tessel into the low-power realm, and a sensible/accessible way to connect many distributed sensor nodes to form a sensor ecosystem.
 >
@@ -23,7 +21,7 @@ How to get involved:
 
 Reach is a work in progress. To ship Reach, there are three projects to work on:
 
-### Interaction (INTERACTION.md)
+### Interaction
 
 **[Current Draft: How do you interact with Reach?](https://github.com/tessel/reach-wg/blob/master/INTERACTION.md)** 
 
@@ -35,7 +33,7 @@ How do you interface with a network of sensors? How do you perform autodiscovery
 * [ ] Prototype these interactions on a high level, e.g. using two or more Tessels to begin with.
 * [ ] Identify milestones for implementation, including "shipping" milestones and "advanced" milestones to follow.
 
-### Firmware (firmware-esp32/)
+### Firmware
 
 **[Read this to get started with Reach's firmware.](https://github.com/tessel/reach-wg/blob/master/firmware-esp32/README.md)**
 
@@ -50,7 +48,7 @@ We want to build a realtime firmware that can handle asynchronous radio communic
 * [ ] Implement an end-to-end demo that demonstrates our Interaction design.
 * [ ] Identify milestones for firmware, including "shipping" milestones and "advanced" milestones to follow.
 
-### Hardware (hardware-esp32/)
+### Hardware
 
 Our goal is to design an ESP32 board that allows us to rapidly test out our product requirements, get out prototype hardware to contributors, and test out real world workloads like speed, power consumption, and radio range. See `hardware-esp32/` for a work in progress schematic and BOM.
 
