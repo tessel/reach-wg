@@ -25,7 +25,7 @@ Reach is a work in progress. To ship Reach, there are three projects to work on:
 
 **[Current Draft: How do you interact with Reach?](https://github.com/tessel/reach-wg/blob/master/INTERACTION.md)** 
 
-How do you interface with a network of sensors? How do you perform autodiscovery? And when talking to a sensor, what is the API like to control its I/O interfaces? We're investigating these questions by designing an API proposal that we can eaasily prototype and test in a few common scenarios.
+How do you interface with a network of sensors? How do you perform autodiscovery? And when talking to a sensor, what is the API like to control its I/O interfaces? We're investigating these questions by designing an API proposal that we can easily prototype and test in a few common scenarios.
 
 * [ ] **Next: [Collect user studies in the folder `case-studies/`. (Submit a PR and contribute your project!)](https://github.com/tessel/reach-wg/issues/11)**
 * [ ] **Next: [Design an API that allows for star network topology over BLE or Wifi.](https://github.com/tessel/reach-wg/issues/13)**
