@@ -5,7 +5,7 @@
 To get started you'll need to first install the `esp-idf` toolchain.
 Follow the link below for your operating system and make sure you are able to successfully complete the first two steps:
 
-**[Get ESP-IDF]https://esp-idf.readthedocs.io/en/latest/get-started/index.html#get-esp-idf)**
+**[Get ESP-IDF](https://esp-idf.readthedocs.io/en/latest/get-started/index.html#get-esp-idf)**
 
 Make sure to follow the specific install instructions at the end of "Setup Path to ESP-IDF" to set up the `ESP_IDF` variable on your PATH.
 
