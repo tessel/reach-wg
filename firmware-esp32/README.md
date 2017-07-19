@@ -1,22 +1,18 @@
 # Getting Started
 
 ## Installing esp-idf
+
 To get started you'll need to first install the `esp-idf` toolchain.
 Follow the link below for your operating system and make sure you are able to successfully complete the first two steps:
 
-- [Windows install instructions](http://esp-idf.readthedocs.io/en/latest/windows-setup.html)
-- [Linux install instructions](http://esp-idf.readthedocs.io/en/latest/linux-setup.html)
-- [MacOS X install instructions](http://esp-idf.readthedocs.io/en/latest/macos-setup.html)
+**[Get ESP-IDF]https://esp-idf.readthedocs.io/en/latest/get-started/index.html#get-esp-idf)**
 
-After installing the tool chain and downloading the `esp-idf` repository:
-  - **On Windows:** Create a new `.sh` file inside `C:/msys32/etc/profile.d/` and add the line `export IDF_PATH=/c/path/to/esp-idf`. Note that the Make configuration expects a UNIX style path and will not build if the path contains any colons or quotes.
-  - **On Linux or MacOS:** Add the line `export IDF_PATH=~/esp/esp-idf` to your `~/.profile`, `~/.bashrc`, or equivalent terminal cofiguration dotfile.
-
-This is just so you don't have to set the `IDF_PATH` every time you start a new terminal session.
+Make sure to follow the specific install instructions at the end of "Setup Path to ESP-IDF" to set up the `ESP_IDF` variable on your PATH.
 
 ## Building and flashing the Reach firmware
 
 If you haven't already, clone this repository and enter the firmware directory:
+
 ```sh
 git clone git@github.com:tessel/reach-wg.git
 cd reach-wg/firmware-esp32/
