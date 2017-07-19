@@ -3,11 +3,11 @@
 ## Installing esp-idf
 
 To get started you'll need to first install the `esp-idf` toolchain.
-Follow the link below for your operating system and make sure you are able to successfully complete the first two steps:
+Follow the link below for your operating system and make sure you are able to successfully complete the first three steps:
 
-**[Get ESP-IDF](https://esp-idf.readthedocs.io/en/latest/get-started/index.html#get-esp-idf)**
-
-Make sure to follow the specific install instructions at the end of "Setup Path to ESP-IDF" to set up the `ESP_IDF` variable on your PATH.
+* **[Setup Toolchain](https://esp-idf.readthedocs.io/en/latest/get-started/index.html#setup-toolchain)** for your OS to set up the compiler toolchain.
+* The section "Get ESP-IDF" to set up the ESP32 API and libraries.
+* The section "Setup Path to ESP-IDF" to set up the `ESP_IDF` variable on your PATH.
 
 ## Building and flashing the Reach firmware
 
