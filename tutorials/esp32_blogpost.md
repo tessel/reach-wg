@@ -1,5 +1,5 @@
 ---
-title: Hello World: ESP32 Firmware
+title: Hello World- ESP32 Firmware
 layout: post
 created_at: Wed Aug 29 2018
 permalink: tutorials/esp32_blogpost
