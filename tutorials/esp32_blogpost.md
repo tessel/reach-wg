@@ -26,30 +26,30 @@ We kick-started the process by setting up the toolchain for the ESP32 module. Th
 downloading, then unzipping the compressed file. The toolchain provided an environment to interact with the ESP32 
 module on Windows 10 through minGW32 CLI. IDF_PATH was set as the system environment variable pointing to to the 
 ‘esp-idf’ folder in esp.<br>
-(/tutorials/img/esp1.png)
+(/img/esp1.png)
 ## Step 2
 The hello world folder loaded into the msys32 folder. We had to the set IDF_PATH correctly. It was initially set 
 to the esp folder but it worked only with the esp-idf folder. The path given on the website did not work.<br>
-(/tutorials/img/esp2.png)
+(/img/esp2.png)
 ## Step 3
 We then gave the make menuconfig command and selected the serial flash option. Following that, we selected the default
 serial port, which did not work. We had to do some hit and trial to figure out the correct port. We tried /dev/ttyUSB0,
 /dev/ttyUSB1,…..,/dev/ttyUSB3, /dev/ttyS2 /dev/tty. The device manager in Windows 10 showed the connected port to be
 COM3. We googled around and it finally worked at COM3 (/dev/ wasn’t required).<br>
-(/tutorials/img/esp3.png)
+(/img/esp3.png)
 ## Step 4
 The next command we gave was make flash. We then waited for the process to complete. The sdkconfig file was generated.<br>
-(/tutorials/img/esp4.png)
+(/img/esp4.png)
 ## Step 5
 Upon its completion, this is what we got.<br>
-(/tutorials/img/esp5.png)
+(/img/esp5.png)
 ## Step 6
 We then followed with the command make monitor. After doing so, the screen showed some garbled characters — so on
 referring to the guide again, we set the XTAL frequency to 26 Hz instead of 40 Hz in the component configuration 
 menu under the serial flash option (make menuconfig).<br>
-(/tutorials/img/esp6.png)
+(/img/esp6.png)
 ## Step 7
 The process was finally complete and we got ‘hello world’ up and running on our screen!<br>
-(/tutorials/img/esp7.png)
+(/img/esp7.png)
 
 
